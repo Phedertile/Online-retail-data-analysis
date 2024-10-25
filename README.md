@@ -52,12 +52,15 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 
 - We will try to use **inertia** and **Silhouette score** to decide which **k (number of cluster)**  should we use
 
-- **Inertia** measures how well a dataset was clustered by K-Means. To find the optimal K for a dataset, use the Elbow method; find the point where the decrease in inertia begins to slow
+#### Inertia
+**Inertia** measures how well a dataset was clustered by K-Means. To find the optimal K for a dataset, use the Elbow method; find the point where the decrease in inertia begins to slow
 
-- **Silhouette score** is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1. 
--   1: Means clusters are well apart from each other and clearly distinguished.
--   0: Means clusters are indifferent, or we can say that the distance between clusters is not significant.
--  1: Means clusters are assigned in the wrong way.
+#### Silhouette score
+
+**Silhouette score** is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1. 
+- 1: Means clusters are well apart from each other and clearly distinguished.
+- 0: Means clusters are indifferent, or we can say that the distance between clusters is not significant.
+- 1: Means clusters are assigned in the wrong way.
 
 **Source**
 - https://www.ibm.com/topics/k-means-clustering
