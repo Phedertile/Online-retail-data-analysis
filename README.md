@@ -32,10 +32,10 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 ### Exploratory Data Analysis
 - There are 2 sheets in excel file, which each sheet contains approximately 500,000 records
 - There are some duplicate records from sheet 2009-2010 in sheet 2010-2011
-- There are null values in 2 columns only which are **Description (4275 records)** and **Customer ID (235151 records)**
+- There are null values in 2 columns only which are ***Description (4275 records)*** and ***Customer ID (235151 records)****
 - There are some records that **Quantity** or **Price** is **minus(-)** because of dept paying or cancelation
-- There are many records which **InvoiceNo's format** not align with the rule
-- There are too many records which **StockCode's format** not align with the rule and they seem meaningful
+- There are many records which ***InvoiceNo's format*** not align with the rule
+- There are too many records which ***StockCode's format*** not align with the rule and they seem meaningful
 
 ### Data cleaning
 1. dropping out all null records
@@ -56,7 +56,7 @@ Summary : Dropped about 25% of records during cleaning
 
 ## non-outlier group's clustering
 
-[non_outlier_visualization](non_outlier.png)
+![non_outlier_visualization](non_outlier.png)
 
 
 ### Cluster 0 : Potential Loyalist
@@ -93,7 +93,7 @@ Summary : Dropped about 25% of records during cleaning
 
 ## outlier group's clustering
 
-[outlier_visualization](outlier.png)
+![outlier_visualization](outlier.png)
 
 ### Cluster -1 (Monetary Outliers) 
 - Characteristic => High spenders but not necessarily frequent buyers. Their purchases are large but infrequent
@@ -115,4 +115,4 @@ Summary : Dropped about 25% of records during cleaning
 
 ## Summary Visualization
 
-[summary_visualization](summary_visualization.png)
+![summary_visualization](summary_visualization.png)
