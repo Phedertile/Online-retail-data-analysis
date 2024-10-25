@@ -2,12 +2,14 @@
 
 This is a project to analyze and segment customers of online retail dataset which contains all the transactions occurring for a UK-based and registered, non-store online retail between 01/12/2009 and 09/12/2011.
 
+
 ## More about dataset:
 
 - The company mainly sells unique all-occasion gift-ware
 - Many customers of the company are wholesalers
 
 Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
+
 
 ## Additional Variable Information
 
@@ -27,13 +29,14 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 
 8. Country: Country name. Nominal. The name of the country where a customer resides.
 
+
 ## Task
 
 ### Exploratory Data Analysis
 - There are 2 sheets in excel file, which each sheet contains approximately 500,000 records
 - There are some duplicate records from sheet 2009-2010 in sheet 2010-2011
 - There are null values in 2 columns only which are ***Description (4275 records)*** and ***Customer ID (235151 records)****
-- There are some records that **Quantity** or **Price** is **minus(-)** because of dept paying or cancelation
+- There are some records that ***Quantity*** or ***Price*** is ***minus(-)*** because of dept paying or cancelation
 - There are many records which ***InvoiceNo's format*** not align with the rule
 - There are too many records which ***StockCode's format*** not align with the rule and they seem meaningful
 
@@ -45,7 +48,7 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 5. Filter out minus Price column
 6. Filter out minus Quantity column
 
-Summary : Dropped about 25% of records during cleaning
+**<u>Summary</u>** : Dropped about 25% of records during cleaning
 
 ### Feature engineering
 1. Daily Summary (daily transaction)
@@ -53,6 +56,8 @@ Summary : Dropped about 25% of records during cleaning
 3. Top 10 selling products
 4. Top 10 customers with high spending and frequency of buying
 5. K-mean clustering of customers (non-outlier group & outlier group)
+
+
 
 ## non-outlier group's clustering
 
@@ -91,6 +96,8 @@ Summary : Dropped about 25% of records during cleaning
 - Suggestion => We should do research on what they like and the reasons they buy our products to deliver straightforward services
 
 
+
+
 ## outlier group's clustering
 
 ![outlier_visualization](outlier.png)
@@ -111,6 +118,8 @@ Summary : Dropped about 25% of records during cleaning
 - Characteristic => extreme spending and frequent purchases. They are likely your top-tier customers who require special attention
 
 - Suggestion =>  Develop VIP programs or exclusive offers to maintain their loyalty and encourage continued engagement
+
+
 
 
 ## Summary Visualization
