@@ -1,6 +1,6 @@
 # Online-retail-data-analysis
 
-This is a project to analyze and segment customers of online retail dataset which contains all the transactions occurring for a UK-based and registered, non-store online retail between 01/12/2009 and 09/12/2011.
+This is a project to analyze and segment customers using RFM framework of online retail dataset which contains all the transactions occurring for a UK-based and registered, non-store online retail between 01/12/2009 and 09/12/2011.
 
 
 ## More about dataset:
@@ -28,6 +28,41 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 7. CustomerID: Customer number. Nominal. A 5-digit integral number uniquely assigned to each customer. 
 
 8. Country: Country name. Nominal. The name of the country where a customer resides.
+
+## Knowledge used in this project
+
+### RFM framework
+
+- RFM is a model for customer segmentation into clusters based on their spending habits, which is a way of data-driven marketing
+- R stands for Recency, How recently a customer has made a purchase
+- F stands for Frequency, How often a customer makes a purchase
+- M stands for Monetary, How much money a customer spends on purchases
+- We can use these 3 values to identify scores for each customer and group them into clusters
+- RFM helps us understand our customers and what actions should we do for each one.
+
+**source**
+- https://www.investopedia.com/terms/r/rfm-recency-frequency-monetary-value.asp
+- https://everydaymarketing.co/business-and-marketing-case-study/data/rfm-analysis-fo-customer-segmentation-from-behavior-transaction-data/
+- https://doctorease.co/en/what-is-rfm/
+
+
+### K-means clustering
+- K-means clustering is an unsupervised learning algorithm used for data clustering, which groups unlabeled data points into groups or clusters
+- K-means is an iterative, centroid-based clustering algorithm that partitions a dataset into similar groups based on the distance between their centroids. The centroid, or cluster center, is either the mean or median of all the points within the cluster depending on the characteristics of the data.
+
+- We will try to use **inertia** and **Silhouette score** to decide which **k (number of cluster)**  should we use
+
+- **Inertia** measures how well a dataset was clustered by K-Means. To find the optimal K for a dataset, use the Elbow method; find the point where the decrease in inertia begins to slow
+
+- **Silhouette score** is a metric used to calculate the goodness of a clustering technique. Its value ranges from -1 to 1. 
+1: Means clusters are well apart from each other and clearly distinguished.
+0: Means clusters are indifferent, or we can say that the distance between clusters is not significant.
+-1: Means clusters are assigned in the wrong way.
+
+**Source**
+- https://www.ibm.com/topics/k-means-clustering
+- https://www.codecademy.com/learn/dspath-unsupervised/modules/dspath-clustering/cheatsheet
+- https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c
 
 
 ## Task
@@ -125,3 +160,4 @@ Source : https://archive.ics.uci.edu/dataset/502/online+retail+ii
 ## Summary Visualization
 
 ![summary_visualization](summary_visualization.png)
+
